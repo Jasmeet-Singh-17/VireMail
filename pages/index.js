@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 const index = () => {
   return (
@@ -60,9 +62,9 @@ const index = () => {
 
 
       <section>
-        <div className='container'>
-          <div className="row">
-            <div className="left-home">
+        <div className='container mt-3'>
+          <div className="row home " >
+            <div className="col col-lg-8 left-home ">
               <h1 className="heading gradient-text">
                 Keep Your Emails<br />Private, Secure, and<br />Encrypted!
               </h1>
@@ -74,7 +76,7 @@ const index = () => {
               </button>
             </div>
 
-            <div className="right-home">
+            <div className="col col-lg-4 right-home">
               <p className="form-heading">Get started with ad-free email.</p>
               <form className="form">
                 <div className="radio-group">
@@ -101,9 +103,9 @@ const index = () => {
 
       <section>
         <div className="container ">
-          <div className="row align-items-center g-4 welcome">
+          <div className="row align-items-center g-2 welcome">
             {/* Left Image */}
-            <div className="col-lg-6 col-12  left-wel">
+            <div className="col-lg-6 left-wel">
               <Image
                 src="/img/privacy.jpg"
                 alt="Privacy"
@@ -114,7 +116,7 @@ const index = () => {
             </div>
 
             {/* Right Content */}
-            <div className="col-lg-6 col-12 right-wel p-4">
+            <div className="col-lg-6 co right-wel p-4">
               <h2 className="fw-bold mb-4">
                 Welcome to Mail Secure –<br />Protecting Your Privacy
               </h2>
@@ -131,6 +133,9 @@ const index = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
         <div className='white-line'>
           <ul>
             <li>
@@ -152,9 +157,52 @@ const index = () => {
         </div>
       </section>
 
+      <section>
+        <div className="container mt-4 mb-4">
+          <h2 className="text-center">Popular Features</h2>
+          <h1 className="text-center mb-4 fw-bold">Features We Provide</h1>
+          <div className="boxes">
+            <div className="box">
+              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
+              <h4><b>Zero-Knowledge Encryption</b></h4>
+              <p>
+                We use state-of-the-art encryption technology to ensure that your emails can only be read by you and your intended recipients. Even we cannot decrypt your messages.
+              </p>
+            </div>
 
+            <div className="box">
+              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
+              <h4><b>Two-Factor Authentication</b></h4>
+              <p>
+                Add an extra layer of protection to your account with two-factor authentication (2FA). It ensures that only you can access your account, even if someone has your password.
+              </p>
+            </div>
 
+            <div className="box">
+              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
+              <h4><b>Self-Destructing Emails</b></h4>
+              <p>
+                Set your emails to automatically delete after a certain period, adding an extra layer of privacy to your most sensitive communications.
+              </p>
+            </div>
 
+            <div className="box">
+              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
+              <h4><b>Password Protection</b></h4>
+              <p>
+                Protect not only your text-based messages but also any files or attachments that you send through our service. Every attachment is encrypted to the highest standards.
+              </p>
+            </div>
+          </div>
+
+          {/* Centered Button */}
+          <div className="button">
+            <button type="submit" className="box-button">
+              See All Features <span className="arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
 
     </>
