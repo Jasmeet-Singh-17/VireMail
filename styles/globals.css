@@ -153,27 +153,22 @@ body {
   border-radius: 50px;
 }
 
-
-/* Wrapper for the row */
-.welcome {
-  gap: .5rem;
-  margin: 1rem 0;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-
 /* Image Container */
-.left-wel {
-  padding: 1rem;
+.welcome {
+  display: flex;
+  gap: .2rem;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
+
 
 .left-wel .img {
   border-radius: 1.5rem;
   border: 1px solid #d9e8ea;
-  box-shadow: 0 0 15px #e3f0f1, 0 0 30px #3d4041;
   transition: all 0.4s ease;
   cursor: pointer;
+  box-shadow: 0 0 15px #e3f0f1, 0 0 30px #3d4041;
+  max-width: 100%;
 }
 
 .left-wel .img:hover {
@@ -214,6 +209,7 @@ body {
   padding: .8rem .5rem;
   font-size: 1.2rem;
   box-shadow: inset 0 0 5px #555, 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .boxes {
@@ -235,6 +231,7 @@ body {
   background: radial-gradient(ellipse at center, rgba(255, 253, 253, 0.15));
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .box:hover {
