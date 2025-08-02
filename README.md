@@ -111,4 +111,3 @@ import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icon
 
 ---
 
-Feel free to modify the design to better suit your brand and user base!
