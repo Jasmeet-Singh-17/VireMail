@@ -125,16 +125,3 @@ import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icon
 ```
 
 ---
-
-## 🧪 Future Enhancements
-
-- Add animations or scroll-based interactions
-- Integrate working email form via backend
-- Include real user testimonials or case studies
-- Add newsletter integration with Mailchimp or EmailJS
-
----
-
-## ✅ Status
-
-🟢 Project is complete and UI-ready. Ideal for SaaS email startups, privacy tools, or Next.js landing page learning references.
