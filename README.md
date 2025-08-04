@@ -54,14 +54,14 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 
 ### ✅ App Download Section
 - Platform-specific icons using **Font Awesome**:
-  - 🪟 Windows (`faWindows`)
+  - 🩟 Windows (`faWindows`)
   - 🍎 Mac & iOS (`faApple`)
   - 🤖 Android (`faAndroid`)
 - Each box has icon, heading, and a short feature description
 
 ---
 
-## 📦 Folder Structure Suggestion
+## 📆 Folder Structure Suggestion
 
 ```
 components/
@@ -110,4 +110,3 @@ import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icon
 - Include real user testimonials or case studies
 
 ---
-
