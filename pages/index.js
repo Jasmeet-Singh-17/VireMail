@@ -8,7 +8,6 @@ import {
   faFacebookF,
   faTwitter,
   faInstagram,
-  faLinkedinIn,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 
@@ -34,17 +33,17 @@ const index = () => {
     {
       name: 'Adam Rankin',
       feedback:
-        'As of our last deployment all of our emails are using WireMail. We are loving the development experience of React Email...',
+        'As of our last deployment all of our emails are using VireMail. We are loving the development experience of React Email...',
     },
     {
       name: 'Taylor Facen',
       feedback:
-        'Working with WireMail has been amazing. By using Webhooks, I\'m able to track email events and manage everything cleanly.',
+        'Working with VireMail has been amazing. By using Webhooks, I\'m able to track email events and manage everything cleanly.',
     },
     {
       name: 'Brek Goin',
       feedback:
-        'WireMail is super easy to set up. Loving the modern approach the team is taking with supercharging email.',
+        'VireMail is super easy to set up. Loving the modern approach the team is taking with supercharging email.',
     },
     {
       name: 'Annie Zhao',
@@ -171,11 +170,11 @@ const index = () => {
 
             <div className="col-lg-7 right-wel p-4">
               <h2 className="fw-bold mb-4">
-                Welcome to Mail Secure –<br />Protecting Your Privacy
+                Welcome to VireMail –<br />Protecting Your Privacy
               </h2>
               <p>
                 In an age where personal data is constantly at risk, protecting your privacy has never been more important.
-                At Mail Secure, we are dedicated to providing you with the most secure and private email experience possible.
+                At VireMail, we are dedicated to providing you with the most secure and private email experience possible.
                 Whether you’re an individual looking to safeguard your personal conversations or a business ensuring
                 confidentiality in professional communications, we’ve got you covered.
               </p>
@@ -292,7 +291,7 @@ const index = () => {
       <section>
         <div className="container mt-4">
           <h2 className="text-center">Download The App </h2>
-          <h1 className="text-center mb-4 fw-bold">Download WireMail for your System </h1>
+          <h1 className="text-center mb-4 fw-bold">Download VireMail for your System </h1>
           <div className="boxes mb-5">
             <div className="box">
               <FontAwesomeIcon icon={faWindows} size="2x" className="mb-2 icon" />
@@ -338,14 +337,14 @@ const index = () => {
             <div className="tbox">
               <h4><b>UnMatched Privacy & Security  </b></h4>
               <p>
-                At MailSecure, privacy isn’t just an option—it’s our core mission. Built with end-to-end encryption and zero-access architecture, MailSecure ensures that your emails are for your eyes only. Not even ProtonMail can access your messages, giving you the peace of mind that your communication is truly private.
+                At VireMail, privacy isn’t just an option—it’s our core mission. Built with end-to-end encryption and zero-access architecture, MailSecure ensures that your emails are for your eyes only. Not even ProtonMail can access your messages, giving you the peace of mind that your communication is truly private.
               </p>
             </div>
 
             <div className="tbox">
               <h4><b>Swiss-Based Protection </b></h4>
               <p>
-                MailSecure is headquartered in Switzerland, a country known for its strict privacy laws. Your data is safeguarded by Swiss neutrality and strong legal protections, ensuring your sensitive information stays secure and beyond the reach of intrusive governments and surveillance.
+                VireMail is headquartered in Switzerland, a country known for its strict privacy laws. Your data is safeguarded by Swiss neutrality and strong legal protections, ensuring your sensitive information stays secure and beyond the reach of intrusive governments and surveillance.
 
 
               </p>
@@ -355,7 +354,7 @@ const index = () => {
             <div className="bbox">
               <h4><b>Open Source and Transparent</b></h4>
               <p>
-                We believe in transparency. MailSecure’s software is open source, meaning anyone can review and audit our code. We regularly undergo independent security audits, so you can trust that our encryption is effective and trustworthy.
+                We believe in transparency. VireMail’s software is open source, meaning anyone can review and audit our code. We regularly undergo independent security audits, so you can trust that our encryption is effective and trustworthy.
               </p>
             </div>
 
@@ -384,25 +383,25 @@ const index = () => {
                 id: "One",
                 question: "What is WireMail",
                 answer:
-                  "WireMail is a secure and private email platform designed to protect your communication and data with end-to-end encryption.",
+                  "VireMail is a secure and private email platform designed to protect your communication and data with end-to-end encryption.",
               },
               {
                 id: "Two",
-                question: "How is WireMail different from other email Services",
+                question: "How is VireMail different from other email Services",
                 answer:
-                  "Unlike traditional email services, WireMail prioritizes privacy by not tracking user activity and providing complete encryption.",
+                  "Unlike traditional email services, VireMail prioritizes privacy by not tracking user activity and providing complete encryption.",
               },
               {
                 id: "Three",
-                question: "Is WireMail really free ?",
+                question: "Is VireMail really free ?",
                 answer:
-                  "Yes, WireMail offers a free plan with core features. Premium plans are available for advanced security and storage.",
+                  "Yes, VireMail offers a free plan with core features. Premium plans are available for advanced security and storage.",
               },
               {
                 id: "Four",
                 question: "How it protects Data ?",
                 answer:
-                  "WireMail encrypts your emails and attachments, ensuring only you and the recipient can access the content.",
+                  "VireMail encrypts your emails and attachments, ensuring only you and the recipient can access the content.",
               },
             ].map(({ id, question, answer }) => (
               <div className="card faq-card" key={id}>
@@ -454,7 +453,7 @@ const index = () => {
         <div className="container px-5">
           <div className="row">
             <div className="col-6 col-lg-4">
-              <h3 className="fw-bold">WireMail</h3>
+              <h3 className="fw-bold">VireMail</h3>
               <p className="pt-2">
                 321, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
@@ -469,13 +468,13 @@ const index = () => {
               </ul>
             </div>
             <div className="col foot-link">
-              <h4>Get WireMail</h4>
+              <h4>Get VireMail</h4>
               <ul className="list-unstyled pt-2">
                 <li className="py-1">iOS</li>
                 <li className="py-1">MacOS</li>
                 <li className="py-1">Android</li>
                 <li className="py-1">Web</li>
-                <li className="py-1">WireMail VPN</li>
+                <li className="py-1">VireMail VPN</li>
 
               </ul>
             </div>
@@ -508,7 +507,7 @@ const index = () => {
           </div>
           <hr />
           <div className="d-sm-flex justify-content-between py-1">
-            <p>2025 © WireMail. All Rights Reserved. </p>
+            <p>2025 © VireMail. All Rights Reserved. </p>
             <p>
               <a href="#" className="text-light text-decoration-none pe-4">
                 Terms of use
