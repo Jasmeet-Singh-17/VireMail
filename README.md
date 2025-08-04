@@ -1,6 +1,6 @@
-# 📧 WireMail – Secure Email Landing Page
+# 📧 VireMail – Secure Email Landing Page
 
-A modern, responsive landing page built with **React**, **Next.js**, and **Bootstrap** for **WireMail**, a fictional privacy-first email service. This component includes a complete layout with accordion FAQ, moving testimonial carousel, download section, and feature highlights.
+A modern, responsive landing page built with **React**, **Next.js**, and **Bootstrap** for **VireMail**, a fictional privacy-first email service. This component includes a complete layout with accordion FAQ, moving testimonial carousel, download section, and feature highlights.
 
 ---
 
@@ -57,9 +57,9 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 - Accordion-based UI using Bootstrap
 - Dark-themed cards with smooth transitions
 - Questions include:
-  - What is WireMail?
-  - How is WireMail different from other email services?
-  - Is WireMail really free?
+  - What is VireMail?
+  - How is VireMail different from other email services?
+  - Is VireMail really free?
   - How it protects data?
 
 ---
