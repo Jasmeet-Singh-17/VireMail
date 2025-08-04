@@ -3,8 +3,53 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icons';
+import Slider from 'react-slick';
+
 
 const index = () => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 8000,
+    cssEase: 'linear',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    swipeToSlide: false,
+    draggable: false,
+  };
+
+  const feedbacks = [
+    {
+      name: 'Adam Rankin',
+      feedback:
+        'As of our last deployment all of our emails are using WireMail. We are loving the development experience of React Email...',
+    },
+    {
+      name: 'Taylor Facen',
+      feedback:
+        'Working with WireMail has been amazing. By using Webhooks, I\'m able to track email events and manage everything cleanly.',
+    },
+    {
+      name: 'Brek Goin',
+      feedback:
+        'WireMail is super easy to set up. Loving the modern approach the team is taking with supercharging email.',
+    },
+    {
+      name: 'Annie Zhao',
+      feedback:
+        'Emails now feel like a seamless part of our stack, and the support from the team has been outstanding.',
+    },
+    {
+      name: 'Michael Zhou',
+      feedback:
+        "I never thought sending emails could be so elegant. It saved us hours of development time and works like a charm every time!",
+    },
+  ];
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark py-2 fs-5.5 align-item-baseline">
@@ -195,7 +240,6 @@ const index = () => {
             </div>
           </div>
 
-          {/* Centered Button */}
           <div className="button">
             <button type="submit" className="box-button">
               See All Features <span className="arrow">→</span>
@@ -238,10 +282,10 @@ const index = () => {
       </section>
 
       <section>
-        <div className="container mt-4 mb-4">
+        <div className="container mt-4">
           <h2 className="text-center">Download The App </h2>
           <h1 className="text-center mb-4 fw-bold">Download WireMail for your System </h1>
-          <div className="boxes">
+          <div className="boxes mb-5">
             <div className="box">
               <FontAwesomeIcon icon={faWindows} size="2x" className="mb-2 icon" />
               <h4><b>On Windows </b></h4>
@@ -274,6 +318,124 @@ const index = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div className="container mt-4 mb-4">
+          <h2 className="text-center"> Why VireMail </h2>
+          <h1 className="text-center mb-4 fw-bold"> Why Choose Us VireMail</h1>
+          <div className="top-boxes">
+            <div className="tbox">
+              <h4><b>UnMatched Privacy & Security  </b></h4>
+              <p>
+                At MailSecure, privacy isn’t just an option—it’s our core mission. Built with end-to-end encryption and zero-access architecture, MailSecure ensures that your emails are for your eyes only. Not even ProtonMail can access your messages, giving you the peace of mind that your communication is truly private.
+              </p>
+            </div>
+
+            <div className="tbox">
+              <h4><b>Swiss-Based Protection </b></h4>
+              <p>
+                MailSecure is headquartered in Switzerland, a country known for its strict privacy laws. Your data is safeguarded by Swiss neutrality and strong legal protections, ensuring your sensitive information stays secure and beyond the reach of intrusive governments and surveillance.
+
+
+              </p>
+            </div>
+          </div>
+          <div className='bottom-boxes'>
+            <div className="bbox">
+              <h4><b>Open Source and Transparent</b></h4>
+              <p>
+                We believe in transparency. MailSecure’s software is open source, meaning anyone can review and audit our code. We regularly undergo independent security audits, so you can trust that our encryption is effective and trustworthy.
+              </p>
+            </div>
+
+            <div className="bbox">
+              <h4><b>Trusted by Millions Worldwide </b></h4>
+              <p>
+                Millions of people, professionals, and organizations around the world trust MailSecure to keep their communications safe. Whether you’re an individual user or a business, ProtonMail offers the privacy tools you need to protect what matters most.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="faq-section my-5">
+        <div className="container faq-container">
+          <div className="text-center mb-5">
+            <h1 className="text-light fw-bold mt-3">
+              Frequently asked <br /> questions
+            </h1>
+          </div>
+
+          <div className="accordion" id="faqAccordion">
+            {/* FAQ Item */}
+            {[
+              {
+                id: "One",
+                question: "What is WireMail",
+                answer:
+                  "WireMail is a secure and private email platform designed to protect your communication and data with end-to-end encryption.",
+              },
+              {
+                id: "Two",
+                question: "How is WireMail different from other email Services",
+                answer:
+                  "Unlike traditional email services, WireMail prioritizes privacy by not tracking user activity and providing complete encryption.",
+              },
+              {
+                id: "Three",
+                question: "Is WireMail really free ?",
+                answer:
+                  "Yes, WireMail offers a free plan with core features. Premium plans are available for advanced security and storage.",
+              },
+              {
+                id: "Four",
+                question: "How it protects Data ?",
+                answer:
+                  "WireMail encrypts your emails and attachments, ensuring only you and the recipient can access the content.",
+              },
+            ].map(({ id, question, answer }) => (
+              <div className="card faq-card" key={id}>
+                <div
+                  className="card-header p-0"
+                  data-bs-toggle="collapse"
+                  data-bs-target={`#collapse${id}`}
+                  aria-expanded="false"
+                  aria-controls={`collapse${id}`}
+                  style={{ cursor: "pointer" }}
+                >
+                  <div className="faq-question px-3 py-3 text-white">{question}</div>
+                </div>
+                <div
+                  id={`collapse${id}`}
+                  className="collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div className="card-body text-light">{answer}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="horizontal-line"></div>
+
+      <section className="feedback-section py-5">
+        <div className="container">
+          <h2 className="text-center text-light mb-4 display-5">What People Say</h2>
+          <Slider {...settings}>
+            {feedbacks.map((item, index) => (
+              <div key={index} className="px-3">
+                <div className="card text-light p-4 h-100 rounded-4">
+                  <p className="mb-4 fs-5">"{item.feedback}"</p>
+                  <h6 className="text-end text-white-50 mb-0">— {item.name}</h6>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </section>
 
