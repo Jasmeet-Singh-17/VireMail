@@ -374,3 +374,13 @@ body {
 .slick-slide {
   padding: 0 10px;
 }
+
+.foot-link {
+  color: #F1F7FEB5;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.foot-link li:hover {
+  color: #fdeded;
+}

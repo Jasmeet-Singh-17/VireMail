@@ -4,6 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icons';
 import Slider from 'react-slick';
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faLinkedinIn,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons'
+
 
 
 const index = () => {
@@ -438,6 +446,81 @@ const index = () => {
           </Slider>
         </div>
       </section>
+
+      <div className="horizontal-line"></div>
+
+
+      <footer className="text-light mt-5 pt-5">
+        <div className="container px-5">
+          <div className="row">
+            <div className="col-6 col-lg-4">
+              <h3 className="fw-bold">WireMail</h3>
+              <p className="pt-2">
+                321, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div className="col foot-link">
+              <h4>Links </h4>
+              <ul className="list-unstyled pt-2">
+                <li className="py-1">Contact Us </li>
+                <li className="py-1">Blog </li>
+                <li className="py-1">Docs</li>
+                <li className="py-1">Support </li>
+              </ul>
+            </div>
+            <div className="col foot-link">
+              <h4>Get WireMail</h4>
+              <ul className="list-unstyled pt-2">
+                <li className="py-1">iOS</li>
+                <li className="py-1">MacOS</li>
+                <li className="py-1">Android</li>
+                <li className="py-1">Web</li>
+                <li className="py-1">WireMail VPN</li>
+
+              </ul>
+            </div>
+            <div className="col foot-link">
+              <h4>Company</h4>
+              <ul className="list-unstyled pt-2">
+                <li className="py-1">Our Story</li>
+                <li className="py-1">Careers</li>
+                <li className="py-1">Press & Media </li>
+                <li className="py-1">Carousels</li>
+              </ul>
+            </div>
+            <div className="col-6 col-lg-3 text-lg-end">
+              <h4>Social Media Links</h4>
+              <div className="social-media pt-2">
+                <a href="#" className="text-light fs-2 me-3">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </a>
+                <a href="#" className="text-light fs-2 me-3">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+                <a href="#" className="text-light fs-2 me-3">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a href="#" className="text-light fs-2">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div className="d-sm-flex justify-content-between py-1">
+            <p>2025 © WireMail. All Rights Reserved. </p>
+            <p>
+              <a href="#" className="text-light text-decoration-none pe-4">
+                Terms of use
+              </a>
+              <a href="#" className="text-light text-decoration-none">
+                {" "}
+                Privacy policy
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
 
     </>
   )
