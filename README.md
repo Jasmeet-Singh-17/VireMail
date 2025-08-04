@@ -1,13 +1,14 @@
-# 📧 VireMail – Secure Email Landing Page
+# 📧 WireMail – Secure Email Landing Page
 
-A modern, responsive landing page built with **React**, **Next.js**, and **Bootstrap** for **VireMail**, a fictional privacy-first email service. This component includes a complete layout with forms, platform-specific icons, download section, and UI-ready features for production.
+A modern, responsive landing page built with **React**, **Next.js**, and **Bootstrap** for **WireMail**, a fictional privacy-first email service. This component includes a complete layout with accordion FAQ, moving testimonial carousel, download section, and feature highlights.
 
 ---
 
 ## 🛠 Technologies Used
 
 - **Next.js** (React Framework)
-- **React Icons / Font Awesome**
+- **React Slick** (carousel)
+- **Font Awesome**
 - **Bootstrap 5**
 - **Custom CSS / SCSS**
 - **next/image** for optimized image rendering
@@ -52,22 +53,41 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 
 ---
 
-### ✅ App Download Section
-- Platform-specific icons using **Font Awesome**:
-  - 🩟 Windows (`faWindows`)
-  - 🍎 Mac & iOS (`faApple`)
-  - 🤖 Android (`faAndroid`)
-- Each box has icon, heading, and a short feature description
+### ✅ FAQ Section
+- Accordion-based UI using Bootstrap
+- Dark-themed cards with smooth transitions
+- Questions include:
+  - What is WireMail?
+  - How is WireMail different from other email services?
+  - Is WireMail really free?
+  - How it protects data?
 
 ---
 
-## 📆 Folder Structure Suggestion
+### ✅ User Feedback Carousel
+- Autoplaying testimonial slider using **react-slick**
+- Displays 3 reviews per view, sliding continuously left
+- Minimal, centered design for clean user experience
+
+---
+
+### ✅ App Download Section
+- Platform-specific icons using **Font Awesome**:
+  - 🪟 Windows (`faWindows`)
+  - 🍎 Mac & iOS (`faApple`)
+  - 🤖 Android (`faAndroid`)
+- Each box includes icon, heading, and a short feature description
+
+---
+
+## 📦 Folder Structure Suggestion
 
 ```
 components/
   └── Home.jsx
   └── Features.jsx
   └── Download.jsx
+  └── Feedback.jsx
 pages/
   └── index.jsx
 public/
@@ -78,17 +98,19 @@ styles/
 
 ---
 
-## 📲 Font Awesome Icons Used
+## 📲 Font Awesome & React Slick Installation
 
-Install Font Awesome packages:
+Install packages:
 
 ```bash
-npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
+npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core react-slick slick-carousel
 ```
 
 In `_app.js`:
 
 ```js
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
@@ -97,6 +119,7 @@ config.autoAddCss = false;
 Then in your components:
 
 ```jsx
+import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icons';
 ```
@@ -108,5 +131,10 @@ import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icon
 - Add animations or scroll-based interactions
 - Integrate working email form via backend
 - Include real user testimonials or case studies
+- Add newsletter integration with Mailchimp or EmailJS
 
 ---
+
+## ✅ Status
+
+🟢 Project is complete and UI-ready. Ideal for SaaS email startups, privacy tools, or Next.js landing page learning references.
