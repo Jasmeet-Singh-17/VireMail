@@ -124,4 +124,3 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icons';
 ```
 
----
