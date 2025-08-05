@@ -27,8 +27,23 @@ const index = () => {
     pauseOnHover: false,
     swipeToSlide: false,
     draggable: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
 
+  // Your new feedback data
   const feedbacks = [
     {
       name: 'Adam Rankin',
@@ -60,7 +75,7 @@ const index = () => {
   return (
     <>
       {/* // Navbar // */}
-      <nav className="navbar navbar-expand-lg navbar-dark py-2 fs-5.5 align-item-baseline">
+      <nav className="navbar navbar-expand-lg navbar-dark viremail-nav">
         <div className="container">
           <a className="navbar-brand fw-bold text-white fs-4" href="#">
             VireMail
@@ -102,12 +117,14 @@ const index = () => {
               </ul>
             </div>
 
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-baseline gap-3">
+            <ul className="navbar-nav align-items-center">
               <li className="nav-item">
-                <a className="nav-link me-3" href="#">Sign in</a>
+                <a className="nav-link" href="#">Sign in</a>
               </li>
-              <li className="nav-item ">
-                <a className="btn btn-light text-dark rounded-pill px-4 py-2" href="#"><b>Download</b></a>
+              <li className="nav-item ms-3">
+                <a className="btn btn-viremail-action rounded-pill px-4 py-2" href="#">
+                  Download App
+                </a>
               </li>
             </ul>
           </div>
@@ -274,40 +291,47 @@ const index = () => {
 
       <section>
         <div className="container ">
-          <div className="row welcome my-5">
-            <div className="col-lg-5 left-wel">
-              <Image
-                src="/img/privacy.jpg"
-                alt="Privacy"
-                className="img"
-                width={500}
-                height={350}
-              />
+          <div className="row g-4 my-5">
+            {/* --- Left Column --- */}
+            <div className="col-12 col-sm-12 col-md-6 col-lg-5">
+              <div className="left-wel">
+                <Image
+                  src="/img/privacy.jpg"
+                  alt="Privacy"
+                  className="img"
+                  width={500}
+                  height={350} />
+              </div>
             </div>
 
-            <div className="col-lg-7 right-wel p-4">
-              <h2 className="fw-bold mb-4">
-                Your Privacy, Secured with <br /> VireMail
-              </h2>
-              <p>
-                At VireMail, we believe that privacy is a fundamental hman right. Our VireMail email service is built from ground up with security in mind, ensuring that your emails remain confidential and protected.
-              </p>
-              <p>
-                <b> Cross-Platform Access:</b> VireMail is available on iOS and Android, ensuring secure email access anytime, anywhere.
-              </p>
-              <h3>
-                Join the Millions Who VireMail
-              </h3>
+            {/* --- Right Column --- */}
+            <div className="col-12 col-sm-12 col-md-6 col-lg-7">
+              <div className="right-wel p-4">
+                <div className="h2 fw-bold mb-4">
+                  Your Privacy, Secured with <br /> VireMail
+                </div>
+                <p>
+                  At VireMail, we believe that privacy is a fundamental hman right. Our VireMail email service is built from ground up with security in mind, ensuring that your emails remain confidential and protected.
+                </p>
+                <p>
+                  <b> Cross-Platform Access:</b> VireMail is available on iOS and Android, ensuring secure email access anytime, anywhere.
+                </p>
+                <h3>
+                  Join the Millions Who VireMail
+                </h3>
+              </div>
             </div>
           </div>
-        </div >
+        </div>
       </section>
 
+      {/* // Download Section // */}
+
       <section>
-        <div className="container mt-4">
+        <div className="container my-4">
           <h2 className="text-center">Download The App </h2>
           <h1 className="text-center mb-4 fw-bold">Download VireMail for your System </h1>
-          <div className="boxes mb-5">
+          <div className="boxes ">
             <div className="box">
               <FontAwesomeIcon icon={faWindows} size="2x" className="mb-2 icon" />
               <h4><b>On Windows </b></h4>
@@ -343,8 +367,11 @@ const index = () => {
         </div>
       </section>
 
+      <div className="horizontal-line"></div>
+
+      {/* // Boxes Section // */}
       <section>
-        <div className="container mt-4 mb-4">
+        <div className="container my-4">
           <h2 className="text-center"> Why VireMail </h2>
           <h1 className="text-center mb-4 fw-bold"> Why Choose Us VireMail</h1>
           <div className="top-boxes">
@@ -359,8 +386,6 @@ const index = () => {
               <h4><b>Swiss-Based Protection </b></h4>
               <p>
                 VireMail is headquartered in Switzerland, a country known for its strict privacy laws. Your data is safeguarded by Swiss neutrality and strong legal protections, ensuring your sensitive information stays secure and beyond the reach of intrusive governments and surveillance.
-
-
               </p>
             </div>
           </div>
@@ -382,52 +407,57 @@ const index = () => {
         </div>
       </section>
 
+      {/* // FAQ Section //  */}
+
       <section className="faq-section my-5">
         <div className="container faq-container">
           <div className="text-center mb-5">
             <h1 className="text-light fw-bold mt-3">
-              Frequently asked <br /> questions
+              Frequently Asked <br /> Questions
             </h1>
           </div>
 
           <div className="accordion" id="faqAccordion">
-            {/* FAQ Item */}
             {[
               {
                 id: "One",
-                question: "What is WireMail",
+                question: "What is VireMail?",
                 answer:
                   "VireMail is a secure and private email platform designed to protect your communication and data with end-to-end encryption.",
               },
               {
                 id: "Two",
-                question: "How is VireMail different from other email Services",
+                question: "How is VireMail different from other email services?",
                 answer:
                   "Unlike traditional email services, VireMail prioritizes privacy by not tracking user activity and providing complete encryption.",
               },
               {
                 id: "Three",
-                question: "Is VireMail really free ?",
+                question: "Is VireMail really free?",
                 answer:
                   "Yes, VireMail offers a free plan with core features. Premium plans are available for advanced security and storage.",
               },
               {
                 id: "Four",
-                question: "How it protects Data ?",
+                question: "How does it protect data?",
                 answer:
                   "VireMail encrypts your emails and attachments, ensuring only you and the recipient can access the content.",
               },
             ].map(({ id, question, answer }) => (
               <div className="card faq-card" key={id}>
+                {/* --- MODIFICATION 1: Added 'collapsed' class for correct initial state --- */}
                 <div
-                  className="card-header p-0"
+                  className="card-header p-0 collapsed"
                   data-bs-toggle="collapse"
                   data-bs-target={`#collapse${id}`}
                   aria-expanded="false"
                   aria-controls={`collapse${id}`}
                   style={{ cursor: "pointer" }}
                 >
-                  <div className="faq-question px-3 py-3 text-white">{question}</div>
+                  {/* --- MODIFICATION 2: Added flexbox classes to position text and icon --- */}
+                  <div className="faq-question px-3 py-3 text-white d-flex justify-content-between align-items-center">
+                    {question}
+                  </div>
                 </div>
                 <div
                   id={`collapse${id}`}
@@ -444,13 +474,16 @@ const index = () => {
 
       <div className="horizontal-line"></div>
 
+      {/* // FeedBack Section // */}
+
       <section className="feedback-section py-5">
         <div className="container">
-          <h2 className="text-center text-light mb-4 display-5">What People Say</h2>
+          <h2 className="text-center text-light mb-5 display-5">What People Say</h2>
+
           <Slider {...settings}>
             {feedbacks.map((item, index) => (
-              <div key={index} className="px-3">
-                <div className="card text-light p-4 h-100 rounded-4">
+              <div key={index} className="p-2">
+                <div className="feedback-card text-light p-4 h-100 rounded-4">
                   <p className="mb-4 fs-5">"{item.feedback}"</p>
                   <h6 className="text-end text-white-50 mb-0">— {item.name}</h6>
                 </div>
@@ -462,74 +495,66 @@ const index = () => {
 
       <div className="horizontal-line"></div>
 
+      {/* //Footer // */}
 
       <footer className="text-light mt-5 pt-5">
         <div className="container px-5">
-          <div className="row">
-            <div className="col-6 col-lg-4">
-              <h3 className="fw-bold">VireMail</h3>
-              <p className="pt-2">
-                321, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-            <div className="col foot-link">
-              <h4>Links </h4>
-              <ul className="list-unstyled pt-2">
-                <li className="py-1">Contact Us </li>
-                <li className="py-1">Blog </li>
-                <li className="py-1">Docs</li>
-                <li className="py-1">Support </li>
-              </ul>
-            </div>
-            <div className="col foot-link">
-              <h4>Get VireMail</h4>
-              <ul className="list-unstyled pt-2">
-                <li className="py-1">iOS</li>
-                <li className="py-1">MacOS</li>
-                <li className="py-1">Android</li>
-                <li className="py-1">Web</li>
-                <li className="py-1">VireMail VPN</li>
+          <div className="row g-4">
 
-              </ul>
+            <div className="col-12 col-lg-3 mb-3 mb-lg-0">
+              <h3 className="fw-bold">VireMail</h3>
+              <p className="text-white-50 mt-2">Secure communication for the modern world.</p>
             </div>
-            <div className="col foot-link">
-              <h4>Company</h4>
+
+            <div className="col-6 col-lg-2">
+              <h5 className="fw-bold">Links</h5>
               <ul className="list-unstyled pt-2">
-                <li className="py-1">Our Story</li>
-                <li className="py-1">Careers</li>
-                <li className="py-1">Press & Media </li>
-                <li className="py-1">Carousels</li>
+                <li className="py-1"><a href="#" className="foot-link">Contact Us</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Blog</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Docs</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Support</a></li>
               </ul>
             </div>
-            <div className="col-6 col-lg-3 text-lg-end">
-              <h4>Social Media Links</h4>
+
+            <div className="col-6 col-lg-2">
+              <h5 className="fw-bold">Get VireMail</h5>
+              <ul className="list-unstyled pt-2">
+                <li className="py-1"><a href="#" className="foot-link">iOS</a></li>
+                <li className="py-1"><a href="#" className="foot-link">MacOS</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Android</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Web</a></li>
+                <li className="py-1"><a href="#" className="foot-link">VireMail VPN</a></li>
+              </ul>
+            </div>
+
+            <div className="col-6 col-lg-2">
+              <h5 className="fw-bold">Company</h5>
+              <ul className="list-unstyled pt-2">
+                <li className="py-1"><a href="#" className="foot-link">Our Story</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Careers</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Press & Media</a></li>
+                <li className="py-1"><a href="#" className="foot-link">Carousels</a></li>
+              </ul>
+            </div>
+
+            <div className="col-6 col-lg-3">
+              <h5 className="fw-bold">Social Media</h5>
               <div className="social-media pt-2">
-                <a href="#" className="text-light fs-2 me-3">
-                  <FontAwesomeIcon icon={faFacebookF} />
-                </a>
-                <a href="#" className="text-light fs-2 me-3">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                <a href="#" className="text-light fs-2 me-3">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="#" className="text-light fs-2">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
+                <a href="#" className="text-light fs-4 me-3"><FontAwesomeIcon icon={faFacebookF} /></a>
+                <a href="#" className="text-light fs-4 me-3"><FontAwesomeIcon icon={faTwitter} /></a>
+                <a href="#" className="text-light fs-4 me-3"><FontAwesomeIcon icon={faInstagram} /></a>
+                <a href="#" className="text-light fs-4"><FontAwesomeIcon icon={faGithub} /></a>
               </div>
             </div>
           </div>
-          <hr />
+
+          <hr className="mt-5 mb-4" />
+
           <div className="d-sm-flex justify-content-between py-1">
-            <p>2025 © VireMail. All Rights Reserved. </p>
+            <p>2025 © VireMail. All Rights Reserved.</p>
             <p>
-              <a href="#" className="text-light text-decoration-none pe-4">
-                Terms of use
-              </a>
-              <a href="#" className="text-light text-decoration-none">
-                {" "}
-                Privacy policy
-              </a>
+              <a href="#" className="text-light text-decoration-none pe-4">Terms of use</a>
+              <a href="#" className="text-light text-decoration-none">Privacy policy</a>
             </p>
           </div>
         </div>

@@ -6,14 +6,40 @@ body {
   font-family: 'Inter';
 }
 
-.navbar .nav-link:hover {
-  color: #e2e8f0;
+.viremail-nav {
+  background-color: #000;
+  padding: 1rem 0;
+  gap: 2rem;
 }
 
-.btn-outline-light:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+.viremail-nav .nav-link {
+  color: #a1a1a1;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+
 }
+
+.viremail-nav .nav-link:hover,
+.viremail-nav .nav-link:focus {
+  color: #ffffff;
+}
+
+.btn-viremail-action {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-viremail-action:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
 
 .left-home,
 .right-home {
@@ -31,11 +57,14 @@ body {
   background: linear-gradient(45deg, #030303, #aaaaaa);
 }
 
-/* Gradient heading */
 .heading {
   color: linear-gradient(90deg, #f5f5f5, #aaaaaa);
   font-family: 'domaine';
   font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.left-home p {
   margin-bottom: 3rem;
 }
 
@@ -226,17 +255,40 @@ body {
   gap: 0.5rem;
 }
 
-.top-boxes,
+/* // Boxes Section // */
+
+.top-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 1.3rem;
+  margin: 2rem 0;
+}
+
+
 .bottom-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
-  gap: 1.5rem;
-  margin: 3rem 0;
+  gap: 1.3rem;
+  margin: 2rem 0;
 }
 
-.tbox,
+.tbox {
+  color: linear-gradient(90deg, #f5f5f5, #aaaaaa);
+  padding: 2rem;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  max-width: 600px;
+  text-align: left;
+  background: radial-gradient(ellipse at center, rgba(255, 253, 253, 0.15));
+  box-shadow: 0 0 5px #979696, 0 0 10px rgba(148, 125, 125, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .bbox {
   color: linear-gradient(90deg, #f5f5f5, #aaaaaa);
   padding: 2rem;
@@ -258,6 +310,7 @@ body {
   transform: translateY(-5px);
 }
 
+/* // FAQ Section // */
 
 .faq-section {
   display: flex;
@@ -273,12 +326,12 @@ body {
 }
 
 .faq-card {
-  background: radial-gradient(ellipse at center, rgba(221, 218, 218, 0.15));
+  background: radial-gradient(ellipse at center, rgba(221, 218, 218, 0.1), rgba(255, 255, 255, 0.05));
   box-shadow: 0 0 5px #979696, 0 0 10px rgba(148, 125, 125, 0.5);
   border: none;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   margin-bottom: 1rem;
 }
 
@@ -302,46 +355,63 @@ body {
   font-size: 0.95rem;
   color: #f3f3f3;
   border-top: .4px solid #555 !important;
-  /* Make it white */
 }
 
-/* Remove extra spacing or jumps */
-.accordion .collapse {
-  margin: 0 !important;
+.faq-question::after {
+  font-family: monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  float: right;
+  transition: transform 0.3s ease;
 }
+
+.card-header.collapsed .faq-question::after {
+  content: '+';
+  color: #a0a0a0;
+}
+
+.card-header:not(.collapsed) .faq-question::after {
+  content: '-';
+  color: #ffffff;
+}
+
+/* //FeedBack Section // */
 
 .feedback-section {
   background: #000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
 }
 
-.card {
-  background: radial-gradient(ellipse at center, rgba(221, 218, 218, 0.15));
-  box-shadow: 2px 2px 2px #979696;
-  transition: all 0.3s ease;
-  cursor: pointer
-}
-
-
-.feedback-section .card {
-  max-height: 200px;
-  transition: all 0.3s ease;
-  transform: translateY(-5px);
-}
-
-.feedback-section .card:hover {
-  transform: translateY(-8px);
+.feedback-card {
+  background: radial-gradient(ellipse at center, rgba(221, 218, 218, 0.1), rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .slick-slide {
-  padding: 0 10px;
+  cursor: default;
+}
+
+footer h5 {
+  color: #ffffff;
 }
 
 .foot-link {
-  color: #F1F7FEB5;
-  cursor: pointer;
-  transition: all .3s;
+  color: rgba(241, 247, 254, 0.71);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.foot-link li:hover {
-  color: #fdeded;
+.foot-link:hover {
+  color: #ffffff;
+}
+
+.social-media a {
+  transition: opacity 0.3s ease;
+}
+
+.social-media a:hover {
+  opacity: 0.7;
 }
