@@ -65,24 +65,6 @@ git clone https://github.com/your-username/viremail-landing.git
 cd viremail-landing
 
 
-## 📦 Folder Structure Suggestion
-
-```
-components/
-  └── Home.jsx
-  └── Features.jsx
-  └── Download.jsx
-  └── Feedback.jsx
-pages/
-  └── index.jsx
-public/
-  └── img/privacy.jpg
-styles/
-  └── globals.css / custom.scss
-```
-
----
-
 ## 📲 Font Awesome & React Slick Installation
 
 Install packages:
