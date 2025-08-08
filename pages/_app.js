@@ -1,6 +1,6 @@
 // pages/_app.js
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/globals.css';
+import '../styles/custom.css';
 import '../styles/responsive.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
