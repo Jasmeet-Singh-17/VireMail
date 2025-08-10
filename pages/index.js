@@ -1,72 +1,13 @@
 import React from 'react';
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
-import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icons';
-import Slider from 'react-slick';
-
 import Header from './widgets/common/header';
 import Footer from './widgets/common/footer';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import { EffectCards } from 'swiper/modules';
 
 const index = () => {
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 8000,
-    cssEase: 'linear',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    pauseOnHover: false,
-    swipeToSlide: false,
-    draggable: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  };
-
-  // Your new feedback data
-  const feedbacks = [
-    {
-      name: 'Adam Rankin',
-      feedback:
-        'As of our last deployment all of our emails are using VireMail. We are loving the development experience of React Email...',
-    },
-    {
-      name: 'Taylor Facen',
-      feedback:
-        'Working with VireMail has been amazing. By using Webhooks, I\'m able to track email events and manage everything cleanly.',
-    },
-    {
-      name: 'Brek Goin',
-      feedback:
-        'VireMail is super easy to set up. Loving the modern approach the team is taking with supercharging email.',
-    },
-    {
-      name: 'Annie Zhao',
-      feedback:
-        'Emails now feel like a seamless part of our stack, and the support from the team has been outstanding.',
-    },
-    {
-      name: 'Michael Zhou',
-      feedback:
-        "I never thought sending emails could be so elegant. It saved us hours of development time and works like a charm every time!",
-    },
-  ];
-
   return (
     <>
       <Header />
@@ -124,12 +65,15 @@ const index = () => {
           <div className="row g-4 my-5">
             <div className="col-12 col-sm-12 col-md-6 col-lg-5">
               <div className="left-wel">
-                <Image
-                  src="/img/privacy.jpg"
-                  alt="Privacy"
-                  className="img"
-                  width={500}
-                  height={370} />
+                <Link href="/privacy">
+                  <img
+                    src="/img/privacy.jpg"
+                    alt="Privacy"
+                    className="img"
+                    width={500}
+                    height={370}
+                  />
+                </Link>
               </div>
             </div>
 
@@ -187,32 +131,28 @@ const index = () => {
           <h1 className="text-center mb-4 fw-bold">Features We Provide</h1>
           <div className="boxes">
             <div className="box">
-              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
-              <h4><b>Zero-Knowledge Encryption</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Zero-Knowledge Encryption</b></h4>
               <p>
                 We use state-of-the-art encryption technology to ensure that your emails can only be read by you and your intended recipients. Even we cannot decrypt your messages.
               </p>
             </div>
 
             <div className="box">
-              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
-              <h4><b>Two-Factor Authentication</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>              <h4><b>Two-Factor Authentication</b></h4>
               <p>
                 Add an extra layer of protection to your account with two-factor authentication (2FA). It ensures that only you can access your account, even if someone has your password.
               </p>
             </div>
 
             <div className="box">
-              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
-              <h4><b>Self-Destructing Emails</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Self-Destructing Emails</b></h4>
               <p>
                 Set your emails to automatically delete after a certain period, adding an extra layer of privacy to your most sensitive communications.
               </p>
             </div>
 
             <div className="box">
-              <FontAwesomeIcon icon={faLock} size="2x" className="mb-2 icon" />
-              <h4><b>Password Protection</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Password Protection</b></h4>
               <p>
                 Protect not only your text-based messages but also any files or attachments that you send through our service. Every attachment is encrypted to the highest standards.
               </p>
@@ -237,12 +177,15 @@ const index = () => {
             {/* --- Left Column --- */}
             <div className="col-12 col-sm-12 col-md-6 col-lg-5">
               <div className="left-wel">
-                <Image
-                  src="/img/privacy.jpg"
-                  alt="Privacy"
-                  className="img"
-                  width={500}
-                  height={350} />
+                <Link href="/privacy">
+                  <img
+                    src="/img/privacy.jpg"
+                    alt="Privacy"
+                    className="img"
+                    width={500}
+                    height={370}
+                  />
+                </Link>
               </div>
             </div>
 
@@ -275,32 +218,28 @@ const index = () => {
           <h1 className="text-center mb-4 fw-bold">Download VireMail for your System </h1>
           <div className="boxes ">
             <div className="box">
-              <FontAwesomeIcon icon={faWindows} size="2x" className="mb-2 icon" />
-              <h4><b>On Windows </b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M3.00098 5.47902L10.3778 4.4625V11.5902H3.00098V5.47902ZM3.00098 18.521L10.3778 19.5375V12.4982H3.00098V18.521ZM11.1894 19.646L21.001 21V12.4982H11.1894V19.646ZM11.1894 4.35402V11.5902H21.001V3L11.1894 4.35402Z"></path></svg>              <h4><b>On Windows </b></h4>
               <p>
                 We use state-of-the-art encryption technology to ensure that your emails can only be read by you and your intended recipients. Even we cannot decrypt your messages.
               </p>
             </div>
 
             <div className="box">
-              <FontAwesomeIcon icon={faApple} size="2x" className="mb-2 icon" />
-              <h4><b>On Mac </b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z"></path></svg>              <h4><b>On Mac </b></h4>
               <p>
                 Add an extra layer of protection to your account with two-factor authentication (2FA). It ensures that only you can access your account, even if someone has your password.
               </p>
             </div>
 
             <div className="box">
-              <FontAwesomeIcon icon={faApple} size="2x" className="mb-2 icon" />
-              <h4><b>On iOS</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z"></path></svg>              <h4><b>On iOS</b></h4>
               <p>
                 Set your emails to automatically delete after a certain period, adding an extra layer of privacy to your most sensitive communications.
               </p>
             </div>
 
             <div className="box">
-              <FontAwesomeIcon icon={faAndroid} size="2x" className="mb-2 icon" />
-              <h4><b>On Android </b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M6.38231 3.9681C7.92199 2.73647 9.87499 2 12 2C14.125 2 16.078 2.73647 17.6177 3.9681L19.0711 2.51472L20.4853 3.92893L19.0319 5.38231C20.2635 6.92199 21 8.87499 21 11V12H3V11C3 8.87499 3.73647 6.92199 4.9681 5.38231L3.51472 3.92893L4.92893 2.51472L6.38231 3.9681ZM3 14H21V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V14ZM9 9C9.55228 9 10 8.55228 10 8C10 7.44772 9.55228 7 9 7C8.44772 7 8 7.44772 8 8C8 8.55228 8.44772 9 9 9ZM15 9C15.5523 9 16 8.55228 16 8C16 7.44772 15.5523 7 15 7C14.4477 7 14 7.44772 14 8C14 8.55228 14.4477 9 15 9Z"></path></svg>              <h4><b>On Android </b></h4>
               <p>
                 Protect not only your text-based messages but also any files or attachments that you send through our service. Every attachment is encrypted to the highest standards.
               </p>
@@ -355,61 +294,91 @@ const index = () => {
         <div className="container faq-container">
           <div className="text-center mb-5">
             <h1 className="text-light fw-bold mt-3">
-              Frequently Asked <br /> Questions
+              Frequently Asked Questions
             </h1>
           </div>
 
           <div className="accordion" id="faqAccordion">
-            {[
-              {
-                id: "One",
-                question: "What is VireMail?",
-                answer:
-                  "VireMail is a secure and private email platform designed to protect your communication and data with end-to-end encryption.",
-              },
-              {
-                id: "Two",
-                question: "How is VireMail different from other email services?",
-                answer:
-                  "Unlike traditional email services, VireMail prioritizes privacy by not tracking user activity and providing complete encryption.",
-              },
-              {
-                id: "Three",
-                question: "Is VireMail really free?",
-                answer:
-                  "Yes, VireMail offers a free plan with core features. Premium plans are available for advanced security and storage.",
-              },
-              {
-                id: "Four",
-                question: "How does it protect data?",
-                answer:
-                  "VireMail encrypts your emails and attachments, ensuring only you and the recipient can access the content.",
-              },
-            ].map(({ id, question, answer }) => (
-              <div className="card faq-card" key={id}>
-                {/* --- MODIFICATION 1: Added 'collapsed' class for correct initial state --- */}
-                <div
-                  className="card-header p-0 collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target={`#collapse${id}`}
-                  aria-expanded="false"
-                  aria-controls={`collapse${id}`}
-                  style={{ cursor: "pointer" }}
-                >
-                  {/* --- MODIFICATION 2: Added flexbox classes to position text and icon --- */}
-                  <div className="faq-question px-3 py-3 text-white d-flex justify-content-between align-items-center">
-                    {question}
-                  </div>
-                </div>
-                <div
-                  id={`collapse${id}`}
-                  className="collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="card-body text-light">{answer}</div>
+
+            <div className="card faq-card">
+              <div
+                className="card-header p-0 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+                style={{ cursor: "pointer" }}
+              >
+                <div className="faq-question px-3 py-3 text-white d-flex justify-content-between align-items-center">
+                  What is VireMail?
                 </div>
               </div>
-            ))}
+              <div id="collapseOne" className="collapse" data-bs-parent="#faqAccordion">
+                <div className="card-body text-light">
+                  VireMail is a secure and private email platform designed to protect your communication and data with end-to-end encryption.
+                </div>
+              </div>
+            </div>
+
+            <div className="card faq-card">
+              <div
+                className="card-header p-0 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                style={{ cursor: "pointer" }}
+              >
+                <div className="faq-question px-3 py-3 text-white d-flex justify-content-between align-items-center">
+                  How is VireMail different from other email services?
+                </div>
+              </div>
+              <div id="collapseTwo" className="collapse" data-bs-parent="#faqAccordion">
+                <div className="card-body text-light">
+                  Unlike traditional email services, VireMail prioritizes privacy by not tracking user activity and providing complete encryption.
+                </div>
+              </div>
+            </div>
+
+            <div className="card faq-card">
+              <div
+                className="card-header p-0 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                style={{ cursor: "pointer" }}
+              >
+                <div className="faq-question px-3 py-3 text-white d-flex justify-content-between align-items-center">
+                  Is VireMail really free?
+                </div>
+              </div>
+              <div id="collapseThree" className="collapse" data-bs-parent="#faqAccordion">
+                <div className="card-body text-light">
+                  Yes, VireMail offers a free plan with core features. Premium plans are available for advanced security and storage.
+                </div>
+              </div>
+            </div>
+
+            <div className="card faq-card">
+              <div
+                className="card-header p-0 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+                style={{ cursor: "pointer" }}
+              >
+                <div className="faq-question px-3 py-3 text-white d-flex justify-content-between align-items-center">
+                  How does it protect data?
+                </div>
+              </div>
+              <div id="collapseFour" className="collapse" data-bs-parent="#faqAccordion">
+                <div className="card-body text-light">
+                  VireMail encrypts your emails and attachments, ensuring only you and the recipient can access the content.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -421,22 +390,24 @@ const index = () => {
       <section className="feedback-section py-5">
         <div className="container">
           <h2 className="text-center text-light mb-5 display-5">What People Say</h2>
-
-          <Slider {...settings}>
-            {feedbacks.map((item, index) => (
-              <div key={index} className="p-2">
-                <div className="feedback-card text-light p-4 h-100 rounded-4">
-                  <p className="mb-4 fs-5">"{item.feedback}"</p>
-                  <h6 className="text-end text-white-50 mb-0">— {item.name}</h6>
-                </div>
-              </div>
-            ))}
-          </Slider>
+          <div className='feedback-cards'>
+            <Swiper
+              effect={'cards'}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper" >
+              <SwiperSlide>As of our last deployment all of our emails are using VireMail. We are loving the development experience of React Email <br></br> Adam Rankin </SwiperSlide>
+              <SwiperSlide>Working with VireMail has been amazing. By using Webhooks, I\'m able to track email events and manage everything cleanly. <br></br> Taylor Facen</SwiperSlide>
+              <SwiperSlide> VireMail is super easy to set up. Loving the modern approach the team is taking with supercharging email.
+                <br></br> Brek Goin </SwiperSlide>
+              <SwiperSlide>Emails now feel like a seamless part of our stack, and the support from the team has been outstanding. <br></br> Annie Zhao</SwiperSlide>
+              <SwiperSlide> I never thought sending emails could be so elegant. It saved us hours of development time and works like a charm every time! <br></br> Michael Zhou</SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </section>
 
       <div className="horizontal-line"></div>
-
 
       <Footer />
 
