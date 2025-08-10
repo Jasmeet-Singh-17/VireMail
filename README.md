@@ -65,29 +65,5 @@ git clone https://github.com/your-username/viremail-landing.git
 cd viremail-landing
 
 
-## 📲 Font Awesome & React Slick Installation
 
-Install packages:
-
-```bash
-npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core react-slick slick-carousel
-```
-
-In `_app.js`:
-
-```js
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-config.autoAddCss = false;
-```
-
-Then in your components:
-
-```jsx
-import Slider from 'react-slick';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icons';
-```
 
