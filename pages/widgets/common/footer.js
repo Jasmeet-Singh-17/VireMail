@@ -12,7 +12,7 @@ class Footer extends PureComponent {
     render() {
         return (
             <>
-                <footer className="text-light mt-5 pt-5">
+                <footer className="text-light mt-4 pt-4">
                     <div className="container px-5">
                         <div className="row g-4">
 
@@ -63,7 +63,7 @@ class Footer extends PureComponent {
                             </div>
                         </div>
 
-                        <hr className="mt-5 mb-4" />
+                        <hr className="mt-5 mb-3" />
 
                         <div className="d-sm-flex justify-content-between py-1">
                             <p>2025 © VireMail. All Rights Reserved.</p>

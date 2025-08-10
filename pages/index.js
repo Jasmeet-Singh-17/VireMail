@@ -109,7 +109,7 @@ const index = () => {
               <li>
                 Zero Access to User Data *
               </li>
-              <li>x
+              <li>
                 Self-Destructing Emails *
               </li>
               <li>
@@ -216,33 +216,41 @@ const index = () => {
         <div className="container my-4">
           <h2 className="text-center">Download The App </h2>
           <h1 className="text-center mb-4 fw-bold">Download VireMail for your System </h1>
-          <div className="boxes ">
+          <div className="down-boxes">
             <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M3.00098 5.47902L10.3778 4.4625V11.5902H3.00098V5.47902ZM3.00098 18.521L10.3778 19.5375V12.4982H3.00098V18.521ZM11.1894 19.646L21.001 21V12.4982H11.1894V19.646ZM11.1894 4.35402V11.5902H21.001V3L11.1894 4.35402Z"></path></svg>              <h4><b>On Windows </b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M3.00098 5.47902L10.3778 4.4625V11.5902H3.00098V5.47902ZM3.00098 18.521L10.3778 19.5375V12.4982H3.00098V18.521ZM11.1894 19.646L21.001 21V12.4982H11.1894V19.646ZM11.1894 4.35402V11.5902H21.001V3L11.1894 4.35402Z"></path></svg>
+              <h4><b>On Windows </b></h4>
               <p>
                 We use state-of-the-art encryption technology to ensure that your emails can only be read by you and your intended recipients. Even we cannot decrypt your messages.
               </p>
+              <button className='down-button'> Download Now</button>
             </div>
 
             <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z"></path></svg>              <h4><b>On Mac </b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z"></path></svg>
+              <h4><b>On Mac </b></h4>
               <p>
                 Add an extra layer of protection to your account with two-factor authentication (2FA). It ensures that only you can access your account, even if someone has your password.
               </p>
+              <button className='down-button'> Download Now</button>
             </div>
 
             <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z"></path></svg>              <h4><b>On iOS</b></h4>
-              <p>
-                Set your emails to automatically delete after a certain period, adding an extra layer of privacy to your most sensitive communications.
-              </p>
-            </div>
-
-            <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M6.38231 3.9681C7.92199 2.73647 9.87499 2 12 2C14.125 2 16.078 2.73647 17.6177 3.9681L19.0711 2.51472L20.4853 3.92893L19.0319 5.38231C20.2635 6.92199 21 8.87499 21 11V12H3V11C3 8.87499 3.73647 6.92199 4.9681 5.38231L3.51472 3.92893L4.92893 2.51472L6.38231 3.9681ZM3 14H21V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V14ZM9 9C9.55228 9 10 8.55228 10 8C10 7.44772 9.55228 7 9 7C8.44772 7 8 7.44772 8 8C8 8.55228 8.44772 9 9 9ZM15 9C15.5523 9 16 8.55228 16 8C16 7.44772 15.5523 7 15 7C14.4477 7 14 7.44772 14 8C14 8.55228 14.4477 9 15 9Z"></path></svg>              <h4><b>On Android </b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M6.38231 3.9681C7.92199 2.73647 9.87499 2 12 2C14.125 2 16.078 2.73647 17.6177 3.9681L19.0711 2.51472L20.4853 3.92893L19.0319 5.38231C20.2635 6.92199 21 8.87499 21 11V12H3V11C3 8.87499 3.73647 6.92199 4.9681 5.38231L3.51472 3.92893L4.92893 2.51472L6.38231 3.9681ZM3 14H21V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V14ZM9 9C9.55228 9 10 8.55228 10 8C10 7.44772 9.55228 7 9 7C8.44772 7 8 7.44772 8 8C8 8.55228 8.44772 9 9 9ZM15 9C15.5523 9 16 8.55228 16 8C16 7.44772 15.5523 7 15 7C14.4477 7 14 7.44772 14 8C14 8.55228 14.4477 9 15 9Z"></path></svg>
+              <h4><b>On Android </b></h4>
               <p>
                 Protect not only your text-based messages but also any files or attachments that you send through our service. Every attachment is encrypted to the highest standards.
               </p>
+              <button className='down-button'> Download Now</button>
+            </div>
+
+            <div className="box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z"></path></svg>
+              <h4><b>On iOS</b></h4>
+              <p>
+                Set your emails to automatically delete after a certain period, adding an extra layer of privacy to your most sensitive communications.
+              </p>
+              <button className='down-button'> Download Now</button>
             </div>
           </div>
         </div>
@@ -252,34 +260,33 @@ const index = () => {
 
       {/* // Boxes Section // */}
       <section>
-        <div className="container my-4">
-          <h2 className="text-center"> Why VireMail </h2>
-          <h1 className="text-center mb-4 fw-bold"> Why Choose Us VireMail</h1>
-          <div className="top-boxes">
+        <div className="container ">
+          <h2 className="text-center">Why VireMail</h2>
+          <h1 className="text-center fw-bold">Why Choose Us VireMail</h1>
+          <div className="all-boxes">
             <div className="tbox">
-              <h4><b>UnMatched Privacy & Security  </b></h4>
+              <h4><b>UnMatched Privacy & Security</b></h4>
               <p>
                 At VireMail, privacy isn’t just an option—it’s our core mission. Built with end-to-end encryption and zero-access architecture, MailSecure ensures that your emails are for your eyes only. Not even ProtonMail can access your messages, giving you the peace of mind that your communication is truly private.
               </p>
             </div>
 
             <div className="tbox">
-              <h4><b>Swiss-Based Protection </b></h4>
+              <h4><b>Swiss-Based Protection</b></h4>
               <p>
                 VireMail is headquartered in Switzerland, a country known for its strict privacy laws. Your data is safeguarded by Swiss neutrality and strong legal protections, ensuring your sensitive information stays secure and beyond the reach of intrusive governments and surveillance.
               </p>
             </div>
-          </div>
-          <div className='bottom-boxes'>
-            <div className="bbox">
+
+            <div className="tbox">
               <h4><b>Open Source and Transparent</b></h4>
               <p>
                 We believe in transparency. VireMail’s software is open source, meaning anyone can review and audit our code. We regularly undergo independent security audits, so you can trust that our encryption is effective and trustworthy.
               </p>
             </div>
 
-            <div className="bbox">
-              <h4><b>Trusted by Millions Worldwide </b></h4>
+            <div className="tbox">
+              <h4><b>Trusted by Millions Worldwide</b></h4>
               <p>
                 Millions of people, professionals, and organizations around the world trust MailSecure to keep their communications safe. Whether you’re an individual user or a business, ProtonMail offers the privacy tools you need to protect what matters most.
               </p>
@@ -387,9 +394,9 @@ const index = () => {
 
       {/* // FeedBack Section // */}
 
-      <section className="feedback-section py-5">
+      <section className="feedback-section py-4">
         <div className="container">
-          <h2 className="text-center text-light mb-5 display-5">What People Say</h2>
+          <h2 className="text-center text-light mb-5 diaply-3">What People Say</h2>
           <div className='feedback-cards'>
             <Swiper
               effect={'cards'}
