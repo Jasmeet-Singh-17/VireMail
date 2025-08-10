@@ -55,15 +55,3 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 - Clean and accessible design
 
 ---
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/viremail-landing.git
-cd viremail-landing
-
-
-
-
