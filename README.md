@@ -6,15 +6,18 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
+⚛ React – Component-based frontend library
 
-- **React** – Component-based frontend library
-- **Next.js** – Server-side rendering and routing
-- **Bootstrap 5** – Styling and responsive layout
-- **FontAwesome** – Icon library
-- **Slick Carousel (`react-slick`)** – Testimonials slider
-- **CSS Modules / SCSS** – Custom styling
+▲ Next.js – Server-side rendering & routing
 
+🎨 Bootstrap 5 – Styling & responsive layout
+
+🎯 FontAwesome – Scalable vector icons
+
+🎠 Slick Carousel (react-slick) – Smooth testimonials slider
+
+🎭 CSS Modules / SCSS – Scoped custom styling
 ---
 
 ## 📄 Features
