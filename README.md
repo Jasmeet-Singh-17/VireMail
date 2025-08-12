@@ -6,23 +6,23 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 
 ---
 
-## Technologies Used
-⚛ React – Component-based frontend library
+## 🛠 Technologies Used 
 
-▲ Next.js – Server-side rendering & routing
+⚛ React – Component-based frontend library for building UI
 
-🎨 Bootstrap 5 – Styling & responsive layout
+▲ Next.js – Server-side rendering, routing, and project structure
 
-🎯 FontAwesome – Scalable vector icons
+🎨 Bootstrap 5 – Responsive grid system & styling framework
 
-🎠 Slick Carousel (react-slick) – Smooth testimonials slider
+🔗 Next.js Link – Client-side navigation between pages
 
-🎭 CSS Modules / SCSS – Scoped custom styling
+🎠 Swiper.js – Testimonial slider with EffectCards module
+
+🎭 CSS / SCSS – Custom styling for branding & layout
+
 ---
 
 ## 📄 Features
-
-
 
 ### 🔐 Home Section
 - Hero section with marketing pitch and CTA
@@ -61,69 +61,6 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 - Quick links to support, blog, app, and company information
 - Clean and accessible design
 
+  ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
