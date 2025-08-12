@@ -16,7 +16,7 @@ const index = () => {
       <section>
         <div className='container'>
           <div className="row g-4 my-4">
-            {/* --- Left Column --- */}
+            {/* Left Column */}
             <div className="col-12 col-sm-12 col-md-6 col-lg-8">
               <div className="left-home h-100">
                 <h1 className="heading">
@@ -31,7 +31,7 @@ const index = () => {
               </div>
             </div>
 
-            {/* --- Right Column --- */}
+            {/* Right Column */}
             <div className="col-12 col-sm-12 col-md-6 col-lg-4">
               <div className="right-home h-100">
                 <p className="form-heading">Get started with ad-free email.</p>
@@ -101,7 +101,7 @@ const index = () => {
       {/* //White Line // */}
       <section>
         <marquee>
-          <div className='white-line my-5'>
+          <div className='white-line my-4 '>
             <ul>
               <li>
                 End-to-End-Encryption *
@@ -213,7 +213,7 @@ const index = () => {
       {/* // Download Section // */}
 
       <section>
-        <div className="container my-4">
+        <div className="container ">
           <h2 className="text-center">Download The App </h2>
           <h1 className="text-center mb-4 fw-bold">Download VireMail for your System </h1>
           <div className="down-boxes">
@@ -260,10 +260,10 @@ const index = () => {
 
       {/* // Boxes Section // */}
       <section>
-        <div className="container ">
+        <div className="container mt-4">
           <h2 className="text-center">Why VireMail</h2>
-          <h1 className="text-center fw-bold">Why Choose Us VireMail</h1>
-          <div className="all-boxes">
+          <h1 className="text-center fw-bold mb-4">Why Choose Us VireMail</h1>
+          <div className="all-boxes ">
             <div className="tbox">
               <h4><b>UnMatched Privacy & Security</b></h4>
               <p>
