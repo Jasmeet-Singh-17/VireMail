@@ -68,39 +68,3 @@ Swiper.js "cards" effect for customer feedback
 Links to support and company pages
 
 Clean, accessible design
-
-🚀 Getting Started
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/viremail-landing.git
-cd viremail-landing
-2️⃣ Install Dependencies
-bash
-Copy
-Edit
-npm install
-3️⃣ Run the Development Server
-bash
-Copy
-Edit
-npm run dev
-Visit http://localhost:3000 to see the landing page in action.
-
-📌 Folder Structure
-bash
-Copy
-Edit
-/components
-  /widgets/common
-    header.js
-    footer.js
-/pages
-  index.js
-/public
-  /img
-/styles
-📜 License
-This project is for educational purposes only. You are free to modify and use it for learning.
-
