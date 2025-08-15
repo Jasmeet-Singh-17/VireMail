@@ -215,8 +215,7 @@ body {
 .boxes {
   display: flex;
   align-items: stretch;
-  gap: 1.5rem;
-  margin: 1rem;
+  gap: 1rem;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
@@ -227,7 +226,7 @@ body {
   color: linear-gradient(90deg, #f5f5f5, #aaaaaa);
   padding: 2rem;
   border-radius: 15px;
-  flex: 1 1 250px;
+  /* flex: 1 1 250px; */
   max-width: 300px;
   text-align: left;
   background: radial-gradient(ellipse at center, rgba(255, 253, 253, 0.15));
@@ -267,17 +266,10 @@ body {
 .down-boxes {
   display: flex;
   align-items: stretch;
-  gap: 1.5rem;
-  margin: 3rem 0;
+  gap: 1rem;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-}
-
-.down-boxes .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .box {
@@ -318,27 +310,44 @@ body {
 
 /* // Boxes Section // */
 
-.all-boxes {
+
+.top-boxes {
   display: flex;
-  gap: 1.1rem;
-  margin: 1rem 0;
-  flex-wrap: wrap;
-  flex-direction: row;
+  gap: 1.5rem;
   align-items: stretch;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 2rem;
 }
 
 .tbox {
-  color: linear-gradient(90deg, #f5f5f5, #aaaaaa);
   padding: 2rem;
   border-radius: 15px;
-  /* flex: 1 1 250px; */
-  max-width: 300px;
+  max-width: 600px;
+  max-height: 400px;
   background: radial-gradient(ellipse at center, rgba(255, 253, 253, 0.15));
   box-shadow: 0 0 5px #979696, 0 0 10px rgba(148, 125, 125, 0.5);
   transition: all 0.3s ease;
   cursor: pointer;
-  text-align: inherit;
+}
+
+.bottom-boxes {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bbox {
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  max-height: 400px;
+  background: radial-gradient(ellipse at center, rgba(255, 253, 253, 0.15));
+  box-shadow: 0 0 5px #979696, 0 0 10px rgba(148, 125, 125, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .tbox h4 {
@@ -347,6 +356,15 @@ body {
 }
 
 .tbox:hover {
+  transform: translateY(-5px);
+}
+
+.bbox h4 {
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+.bbox:hover {
   transform: translateY(-5px);
 }
 

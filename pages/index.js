@@ -3,8 +3,6 @@ import Header from './widgets/common/header';
 import Footer from './widgets/common/footer';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
 
 const index = () => {
@@ -131,28 +129,28 @@ const index = () => {
           <h1 className="text-center mb-4 fw-bold">Features We Provide</h1>
           <div className="boxes">
             <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Zero-Knowledge Encryption</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 7.23792L12.0718 14.338L4 7.21594V19H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11H20V7.23792ZM19.501 5H4.51146L12.0619 11.662L19.501 5ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>              <h4><b>Zero-Knowledge Encryption</b></h4>
               <p>
                 We use state-of-the-art encryption technology to ensure that your emails can only be read by you and your intended recipients. Even we cannot decrypt your messages.
               </p>
             </div>
 
             <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>              <h4><b>Two-Factor Authentication</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 7.23792L12.0718 14.338L4 7.21594V19H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11H20V7.23792ZM19.501 5H4.51146L12.0619 11.662L19.501 5ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>              <h4><b>Two-Factor Authentication</b></h4>
               <p>
                 Add an extra layer of protection to your account with two-factor authentication (2FA). It ensures that only you can access your account, even if someone has your password.
               </p>
             </div>
 
             <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Self-Destructing Emails</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 7.23792L12.0718 14.338L4 7.21594V19H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11H20V7.23792ZM19.501 5H4.51146L12.0619 11.662L19.501 5ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Self-Destructing Emails</b></h4>
               <p>
                 Set your emails to automatically delete after a certain period, adding an extra layer of privacy to your most sensitive communications.
               </p>
             </div>
 
             <div className="box">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M22 11.9996C21.1643 11.3719 20.1256 11 19 11C16.581 11 14.5633 12.7178 14.1 15H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11.9996ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Password Protection</b></h4>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 7.23792L12.0718 14.338L4 7.21594V19H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V11H20V7.23792ZM19.501 5H4.51146L12.0619 11.662L19.501 5ZM22 17H23V22H15V17H16V16C16 14.3431 17.3431 13 19 13C20.6569 13 22 14.3431 22 16V17ZM20 17V16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16V17H20Z"></path></svg>                <h4><b>Password Protection</b></h4>
               <p>
                 Protect not only your text-based messages but also any files or attachments that you send through our service. Every attachment is encrypted to the highest standards.
               </p>
@@ -216,7 +214,7 @@ const index = () => {
         <div className="container ">
           <h2 className="text-center">Download The App </h2>
           <h1 className="text-center mb-4 fw-bold">Download VireMail for your System </h1>
-          <div className="down-boxes">
+          <div className="down-boxes pb-3">
             <div className="box">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M3.00098 5.47902L10.3778 4.4625V11.5902H3.00098V5.47902ZM3.00098 18.521L10.3778 19.5375V12.4982H3.00098V18.521ZM11.1894 19.646L21.001 21V12.4982H11.1894V19.646ZM11.1894 4.35402V11.5902H21.001V3L11.1894 4.35402Z"></path></svg>
               <h4><b>On Windows </b></h4>
@@ -260,36 +258,40 @@ const index = () => {
 
       {/* // Boxes Section // */}
       <section>
-        <div className="container mt-4">
+        <div className="container">
           <h2 className="text-center">Why VireMail</h2>
           <h1 className="text-center fw-bold mb-4">Why Choose Us VireMail</h1>
-          <div className="all-boxes ">
-            <div className="tbox">
-              <h4><b>UnMatched Privacy & Security</b></h4>
-              <p>
-                At VireMail, privacy isn’t just an option—it’s our core mission. Built with end-to-end encryption and zero-access architecture, MailSecure ensures that your emails are for your eyes only. Not even ProtonMail can access your messages, giving you the peace of mind that your communication is truly private.
-              </p>
+          <div className='all-boxes'>
+            <div className="top-boxes ">
+              <div className="tbox">
+                <h4><b>UnMatched Privacy & Security</b></h4>
+                <p>
+                  At VireMail, privacy isn’t just an option—it’s our core mission. Built with end-to-end encryption and zero-access architecture, MailSecure ensures that your emails are for your eyes only. Not even ProtonMail can access your messages, giving you the peace of mind that your communication is truly private.
+                </p>
+              </div>
+
+              <div className="tbox">
+                <h4><b>Swiss-Based Protection</b></h4>
+                <p>
+                  VireMail is headquartered in Switzerland, a country known for its strict privacy laws. Your data is safeguarded by Swiss neutrality and strong legal protections, ensuring your sensitive information stays secure and beyond the reach of intrusive governments and surveillance.
+                </p>
+              </div>
             </div>
 
-            <div className="tbox">
-              <h4><b>Swiss-Based Protection</b></h4>
-              <p>
-                VireMail is headquartered in Switzerland, a country known for its strict privacy laws. Your data is safeguarded by Swiss neutrality and strong legal protections, ensuring your sensitive information stays secure and beyond the reach of intrusive governments and surveillance.
-              </p>
-            </div>
+            <div className='bottom-boxes'>
+              <div className="bbox">
+                <h4><b>Open Source and Transparent</b></h4>
+                <p>
+                  We believe in transparency. VireMail’s software is open source, meaning anyone can review and audit our code. We regularly undergo independent security audits, so you can trust that our encryption is effective and trustworthy.
+                </p>
+              </div>
 
-            <div className="tbox">
-              <h4><b>Open Source and Transparent</b></h4>
-              <p>
-                We believe in transparency. VireMail’s software is open source, meaning anyone can review and audit our code. We regularly undergo independent security audits, so you can trust that our encryption is effective and trustworthy.
-              </p>
-            </div>
-
-            <div className="tbox">
-              <h4><b>Trusted by Millions Worldwide</b></h4>
-              <p>
-                Millions of people, professionals, and organizations around the world trust MailSecure to keep their communications safe. Whether you’re an individual user or a business, ProtonMail offers the privacy tools you need to protect what matters most.
-              </p>
+              <div className="bbox">
+                <h4><b>Trusted by Millions Worldwide</b></h4>
+                <p>
+                  Millions of people, professionals, and organizations around the world trust MailSecure to keep their communications safe. Whether you’re an individual user or a business, ProtonMail offers the privacy tools you need to protect what matters most.
+                </p>
+              </div>
             </div>
           </div>
         </div>
