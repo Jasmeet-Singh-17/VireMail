@@ -1,17 +1,24 @@
 # 📧 VireMail – Secure Email Landing Page
 
+
 A modern, responsive landing page built with **React**, **Next.js**, and **Bootstrap** for **VireMail**, a fictional privacy-first email service. This project demonstrates a clean and modular approach to building marketing websites with reusable components and modern UI libraries.
+
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Technologies Used 
 
-- **React** – Component-based frontend library
-- **Next.js** – Server-side rendering and routing
-- **Bootstrap 5** – Styling and responsive layout
-- **FontAwesome** – Icon library
-- **Slick Carousel (`react-slick`)** – Testimonials slider
-- **CSS Modules / SCSS** – Custom styling
+⚛ React – Component-based frontend library for building UI
+
+▲ Next.js – Server-side rendering, routing, and project structure
+
+🎨 Bootstrap 5 – Responsive grid system & styling framework
+
+🔗 Next.js Link – Client-side navigation between pages
+
+🎠 Swiper.js – Testimonial slider with EffectCards module
+
+🎭 CSS / SCSS – Custom styling for branding & layout
 
 ---
 
@@ -54,4 +61,6 @@ A modern, responsive landing page built with **React**, **Next.js**, and **Boots
 - Quick links to support, blog, app, and company information
 - Clean and accessible design
 
----
+  ---
+
+  
